@@ -1,66 +1,34 @@
-## Foundry
+# Lottery Game Smart Contract
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+## Background
 
-Foundry consists of:
+The smart contract in this repository is part of a 15 day smart contract building challenge. The challenge has three levels of difficulty, namely:
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+- Basic: The challenges from Day 1 to Day 5
+- Intermediate: The challenges from Day 6 to Day 10
+- Advanced: The challenges from Day 11 to Day 15
 
-## Documentation
+## Challenge Task: Basic 4
 
-https://book.getfoundry.sh/
+Write a smart contract that can implement a simple lottery game. The contract should have an array that stores the addresses of the players. The contract should also have a function to allow players to join the game, by sending a fixed amount of ether to the contract. The contract should also have a function to randomly select a winner, based on a pseudo-random number generator. The contract should also have a function to send the prize money to the winner, and reset the game.
 
-## Usage
+## Contribution
 
-### Build
+**Feel free to:**
 
-```shell
-$ forge build
-```
+- Critique the code and send me any comment via <a href="www.x.com/DMitong">Twitter</a> or via <a href="mailto:mitongdapal@gmail.com">Email</a>.
+- Modify the contract to add new features or functionalities.
+- Experiment with different deployment parameters and usage scenarios.
+- Contribute to the code or suggest improvements by raising issues or pull requests.
 
-### Test
+## Disclaimer:
 
-```shell
-$ forge test
-```
+This is provided as a basic example and should not be used in production without proper security and testing. If to be used in production, use at your own risk.
 
-### Format
+## License
 
-```shell
-$ forge fmt
-```
+This contract is unlicensed.
 
-### Gas Snapshots
+## Acknowledgments
 
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+This contract was developed and tested using Foundry, a Solidity development and testing platform.
